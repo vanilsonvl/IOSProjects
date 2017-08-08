@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  App04CourseIOS
 //
-//  Created by Palotec on 12/05/17.
+//  Created by Vanilson on 12/05/17.
 //  Copyright © 2017 Vanilsonvl. All rights reserved.
 //
 

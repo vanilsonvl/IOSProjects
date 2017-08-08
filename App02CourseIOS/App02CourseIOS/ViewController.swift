@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  App02CourseIOS
 //
-//  Created by Palotec on 19/04/17.
+//  Created by Vanilson on 19/04/17.
 //  Copyright © 2017 Vanilsonvl. All rights reserved.
 //
 

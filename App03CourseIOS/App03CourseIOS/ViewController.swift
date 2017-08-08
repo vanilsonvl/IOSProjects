@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  App03CourseIOS
 //
-//  Created by Palotec on 24/04/17.
+//  Created by Vanilsonvl on 24/04/17.
 //  Copyright © 2017 Vanilsonvl. All rights reserved.
 //
 
