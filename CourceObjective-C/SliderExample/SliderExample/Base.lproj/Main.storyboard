@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Donation for charity" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KpP-Qz-gPI">
+                                <rect key="frame" x="111" y="81" width="153" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6uf-8x-oJM">
+                                <rect key="frame" x="207" y="172" width="8" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="1" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="g7y-uf-hTy">
+                                <rect key="frame" x="14" y="119" width="347" height="31"/>
+                                <connections>
+                                    <action selector="onChangeSlider:" destination="BYZ-38-t0r" eventType="valueChanged" id="zqR-ug-CyG"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dolar USD:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ztj-4e-PtR">
+                                <rect key="frame" x="98.5" y="172" width="84.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AQS-Rl-d9g">
+                                <rect key="frame" x="115" y="300" width="145" height="30"/>
+                                <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Donate 10 USD"/>
+                                <connections>
+                                    <action selector="on10Donate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IuI-6H-Me8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rCU-I2-wul">
+                                <rect key="frame" x="115" y="338" width="145" height="30"/>
+                                <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
+                                <state key="normal" title="Donate 50 USD"/>
+                                <connections>
+                                    <action selector="on50Donate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UFb-z5-GFr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3XT-mL-1cz">
+                                <rect key="frame" x="115" y="262" width="145" height="30"/>
+                                <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Donate 5 USD"/>
+                                <connections>
+                                    <action selector="on5Donate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5Jn-YT-Dnl"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="rCU-I2-wul" firstAttribute="top" secondItem="AQS-Rl-d9g" secondAttribute="bottom" constant="8" id="0IK-B3-bZa"/>
+                            <constraint firstItem="3XT-mL-1cz" firstAttribute="top" secondItem="6uf-8x-oJM" secondAttribute="bottom" constant="69" id="2Gh-Tn-oJv"/>
+                            <constraint firstItem="KpP-Qz-gPI" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="61" id="2NE-pJ-5KP"/>
+                            <constraint firstItem="3XT-mL-1cz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="115" id="4R2-CU-gcC"/>
+                            <constraint firstItem="6uf-8x-oJM" firstAttribute="top" secondItem="g7y-uf-hTy" secondAttribute="bottom" constant="23" id="9ah-iM-mU4"/>
+                            <constraint firstItem="ztj-4e-PtR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="99" id="9bP-7c-U45"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="g7y-uf-hTy" secondAttribute="trailing" constant="16" id="ABu-Kc-SXw"/>
+                            <constraint firstItem="6uf-8x-oJM" firstAttribute="leading" secondItem="ztj-4e-PtR" secondAttribute="trailing" constant="24" id="Bay-pm-3GY"/>
+                            <constraint firstItem="g7y-uf-hTy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="FLp-eF-eNt"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6uf-8x-oJM" secondAttribute="trailing" constant="160" id="Hxt-0Z-F8c"/>
+                            <constraint firstItem="g7y-uf-hTy" firstAttribute="top" secondItem="KpP-Qz-gPI" secondAttribute="bottom" constant="17" id="QBA-m6-U2S"/>
+                            <constraint firstItem="ztj-4e-PtR" firstAttribute="top" secondItem="g7y-uf-hTy" secondAttribute="bottom" constant="23" id="UTY-po-iMf"/>
+                            <constraint firstItem="rCU-I2-wul" firstAttribute="trailing" secondItem="3XT-mL-1cz" secondAttribute="trailing" id="W71-yE-zqh"/>
+                            <constraint firstItem="rCU-I2-wul" firstAttribute="leading" secondItem="3XT-mL-1cz" secondAttribute="leading" id="WU6-gW-5cC"/>
+                            <constraint firstItem="AQS-Rl-d9g" firstAttribute="trailing" secondItem="3XT-mL-1cz" secondAttribute="trailing" id="aFd-ad-JJB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3XT-mL-1cz" secondAttribute="trailing" constant="115" id="nSI-AL-QIR"/>
+                            <constraint firstItem="KpP-Qz-gPI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="111" id="prf-MJ-IYy"/>
+                            <constraint firstItem="AQS-Rl-d9g" firstAttribute="leading" secondItem="3XT-mL-1cz" secondAttribute="leading" id="td0-Sy-DY8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="KpP-Qz-gPI" secondAttribute="trailing" constant="111" id="tsf-py-M0n"/>
+                            <constraint firstItem="AQS-Rl-d9g" firstAttribute="top" secondItem="3XT-mL-1cz" secondAttribute="bottom" constant="8" id="zBl-FJ-ZXV"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="USDDonateLabel" destination="6uf-8x-oJM" id="uXX-xM-W5V"/>
+                        <outlet property="sliderCharity" destination="g7y-uf-hTy" id="WGO-lV-59H"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+</document>

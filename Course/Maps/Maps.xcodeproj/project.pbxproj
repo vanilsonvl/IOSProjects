@@ -12,6 +12,7 @@
 		9D2655591FBB71F100E84FFE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D2655571FBB71F100E84FFE /* Main.storyboard */; };
 		9D26555B1FBB71F100E84FFE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D26555A1FBB71F100E84FFE /* Assets.xcassets */; };
 		9D26555E1FBB71F100E84FFE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D26555C1FBB71F100E84FFE /* LaunchScreen.storyboard */; };
+		9DA28E9F1FDB186500EE7DE9 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DA28E9E1FDB186500EE7DE9 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		9D26555A1FBB71F100E84FFE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9D26555D1FBB71F100E84FFE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9D26555F1FBB71F100E84FFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9DA28E9E1FDB186500EE7DE9 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DA28E9F1FDB186500EE7DE9 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +43,7 @@
 			children = (
 				9D2655521FBB71F100E84FFE /* Maps */,
 				9D2655511FBB71F100E84FFE /* Products */,
+				9DA28E9D1FDB186500EE7DE9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,6 +66,14 @@
 				9D26555F1FBB71F100E84FFE /* Info.plist */,
 			);
 			path = Maps;
+			sourceTree = "<group>";
+		};
+		9DA28E9D1FDB186500EE7DE9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9DA28E9E1FDB186500EE7DE9 /* CoreLocation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -300,6 +312,7 @@
 				9D2655641FBB71F100E84FFE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

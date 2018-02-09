@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Simple Form" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w7h-QS-bsi">
+                                <rect key="frame" x="132" y="36" width="111" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Receive emails" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zCp-s9-cBF">
+                                <rect key="frame" x="32" y="109" width="113.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email Address:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Gj-Ri-Fqj">
+                                <rect key="frame" x="32" y="159" width="113" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="q0b-Cn-w4J">
+                                <rect key="frame" x="177.5" y="104" width="51" height="31"/>
+                                <color key="onTintColor" red="0.66422420739999999" green="0.66424006219999998" blue="0.66423153879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="onSwitchChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="WMC-El-wai"/>
+                                </connections>
+                            </switch>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hWN-9b-Jai">
+                                <rect key="frame" x="153" y="154" width="206" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BPm-Td-yYO">
+                                <rect key="frame" x="32" y="216" width="311" height="30"/>
+                                <color key="backgroundColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Change">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="onClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="X8d-rn-Tbi"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hWN-9b-Jai" secondAttribute="trailing" constant="16" id="5pD-5g-1mx"/>
+                            <constraint firstItem="hWN-9b-Jai" firstAttribute="top" secondItem="q0b-Cn-w4J" secondAttribute="bottom" constant="19" id="7dd-qZ-hUA"/>
+                            <constraint firstItem="zCp-s9-cBF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="CbV-PC-8g7"/>
+                            <constraint firstItem="w7h-QS-bsi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="132" id="Foo-KX-oWf"/>
+                            <constraint firstItem="hWN-9b-Jai" firstAttribute="leading" secondItem="2Gj-Ri-Fqj" secondAttribute="trailing" constant="8" id="Hpg-Kr-MIh"/>
+                            <constraint firstItem="2Gj-Ri-Fqj" firstAttribute="top" secondItem="q0b-Cn-w4J" secondAttribute="bottom" constant="24" id="JMZ-Kg-3Cb"/>
+                            <constraint firstItem="q0b-Cn-w4J" firstAttribute="top" secondItem="w7h-QS-bsi" secondAttribute="bottom" constant="47" id="NQf-pq-zSR"/>
+                            <constraint firstItem="w7h-QS-bsi" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="QME-p2-yNd"/>
+                            <constraint firstItem="BPm-Td-yYO" firstAttribute="top" secondItem="hWN-9b-Jai" secondAttribute="bottom" constant="32" id="bpK-4P-JsR"/>
+                            <constraint firstItem="2Gj-Ri-Fqj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="cu9-ma-dwB"/>
+                            <constraint firstItem="q0b-Cn-w4J" firstAttribute="leading" secondItem="zCp-s9-cBF" secondAttribute="trailing" constant="32" id="hLZ-mu-foD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="w7h-QS-bsi" secondAttribute="trailing" constant="132" id="iX0-48-wfi"/>
+                            <constraint firstItem="BPm-Td-yYO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="k9q-jf-Lh4"/>
+                            <constraint firstItem="zCp-s9-cBF" firstAttribute="top" secondItem="w7h-QS-bsi" secondAttribute="bottom" constant="52" id="oGb-MB-8eG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BPm-Td-yYO" secondAttribute="trailing" constant="32" id="odQ-wG-9ve"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="emailLabel" destination="2Gj-Ri-Fqj" id="lDp-3K-e8m"/>
+                        <outlet property="emailSwitch" destination="q0b-Cn-w4J" id="cz8-tR-HSc"/>
+                        <outlet property="emailTextField" destination="hWN-9b-Jai" id="3ZO-br-sFH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+</document>
